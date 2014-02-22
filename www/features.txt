@@ -1,0 +1,2 @@
+1.	Javascript is a dynamic language, which means that variable's type can change during runtime and object's structure as well.
+2. 	Javascript is asynchronous, which means that in order to get parallel effect, one doesn't need to use (the complicated and limited) threads.

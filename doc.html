@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <title>Testers documentation</title>
+        <link rel="stylesheet" href="www/style.css" />
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <style>
+            h1, h2, h3, p {
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 54pt;
+                text-decoration: none;
+                margin-bottom: 0;
+            }
+
+            p {
+                font-style: italic;
+            }
+
+            ul li {
+                list-style-type: none;
+                margin: 50px 0 0 0;
+                padding: 0 250px 0 200px;
+                text-align: justify;
+            }
+
+            .hidden {
+                display: none;
+            }
+        </style>
+
+        <script>
+            setTimeout(function(){
+                $('header').fadeIn('slow');
+            }, 500);
+
+            setTimeout(function(){
+                $('section').fadeIn('slow');
+            }, 1000);
+        </script>
+
+    </head>
+    <body>
+        <article id="mainContainer" class="shadowedBordered">
+            <header class="padded hidden">
+                <h1>Testers documentation</h1>
+            </header>
+
+            <section class="padded hidden">
+                <h2>tester.js</h2>
+                <h3>First tests batch</h3>
+
+                <p>
+                    This batch of tests checks all kinds of static get requests.
+                    The only middle ware used here is static with '/static'
+                    resource.
+                </p>
+                <ul>
+                    <li>
+                        GET requests for '/static' and '/static/' to verify that
+                        the RegExp works as expected.
+                    </li>
+                    <li>
+                        GET request for '/stat' to verify that user can't get
+                        resource that wasn't declared.
+                    </li>
+                    <li>
+                        GET request for '/static' using the second port that is
+                        listening and verifying that the first port is still
+                        listening for same app's requests.
+                    </li>
+                </ul>
+
+                <h3>Second tests batch</h3>
+
+                <p>
+                    This batch of tests checks the use of parameters, json and
+                    urlencoded. It also checks the use of next().
+                </p>
+                <ul>
+                    <li>
+                        First handler pushed is put which adds a parameter to
+                        the request object and calls next. Next handler verifies
+                        that this parameter was set indeed. This handler checks
+                        also the call to use (or get, post, put, delete) without
+                        resource argument.
+                    </li>
+                    <li>
+                        PUT request that sends two parameters and a JSON body.
+                    </li>
+                    <li>
+                        PUT request that has two values in it's body. Body is in
+                        the form of urlencoded.
+                    </li>
+                </ul>
+
+                <h3>Third tests batch</h3>
+                <p>
+                    This batch of tests checks the use of cookieParser.
+                </p>
+                <ul>
+                    <li>
+                        GET request that the client initiates. The server should
+                        respond with 'Set-Cookie' header.
+                    </li>
+                    <li>
+                        GET request that the client initiates. The request
+                        should include the first cookie sent from the server
+                        earlier. The server responds with a new extra cookie.
+                    </li>
+                    <li>
+                        GET request that the client initiates. This request
+                        should include the two cookies that were sent by the
+                        server earlier. Server verifies that both of the cookies
+                        are set.
+                    </li>
+                </ul>
+            </section>
+
+            <section class="padded hidden">
+                <h2>load.js</h2>
+                This simple test ask for three files, 3000 times for each of the
+                files. The tester compares the content of each response to the
+                original file read from disk. At the end, the tester waits for
+                10 seconds before checking the results to ensure that all
+                requests are made.
+            </section>
+        </article>
+    </body>
+</html>

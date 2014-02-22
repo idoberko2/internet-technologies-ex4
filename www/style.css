@@ -1,0 +1,241 @@
+body
+{
+    font: normal 12pt Tahoma;
+    color: #fff;
+}
+
+p
+{
+
+}
+
+a
+{
+    color: #fff;
+}
+
+a:hover
+{
+    text-decoration: none;
+}
+
+h1
+{
+    font-weight: normal;
+    text-decoration: underline;
+    font-size: 24pt;
+    /*border-bottom: 4px solid #fff;*/
+}
+
+hr
+{
+    margin: 0;
+    border: 0px;
+    border-top: 1px solid #000;
+}
+
+form
+{
+    margin: 0;
+}
+
+.shadowedBordered
+{
+    border: 6px solid #f0f0f0;
+    box-shadow: 1px 3px 1px 1px #88a7a7;
+}
+
+article#mainContainer
+{
+    width: 1000px;
+    min-height: 810px;
+    margin: 30px auto;
+    padding: 10px 0;
+    background-color: #4bacc6;
+}
+
+
+.padded
+{
+    padding: 10px 30px;
+}
+
+/*Form*/
+
+label
+{
+    color: #000;
+}
+
+.niceButton
+{
+	font-size: 12pt;
+    color: #fff;
+
+    background-color: #2e70c5;
+    border-radius: 10px;
+    padding: 5px 30px;
+}
+
+header#upperForm div#formFields
+{
+    float: left;
+    margin: 5px 0 0 320px;
+}
+
+header#upperForm div#formFields input
+{
+    font-size: 12pt;
+    padding: 5px 3px;
+    width: 160px;
+    border: 1px solid #000;
+}
+
+header#upperForm button#submitButton
+{
+    
+    float: right;
+}
+
+/*Form end*/
+
+
+section#mainContent
+{
+    padding: 30px 0 30px 30px;
+}
+
+section#headerContainer
+{
+    float: left;
+}
+
+section#myPic
+{
+    float: right;
+
+    width: 350px;
+    height: 320px;
+    overflow: hidden;
+
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+}
+
+/*Table*/
+
+section#tableSection
+{
+    padding-bottom: 80px;
+}
+
+table#websitesTable
+{
+    border: 1px solid #fff;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table#websitesTable td
+{
+    border: 1px solid #fff;
+    padding: 5px 10px;
+}
+
+/*Table end*/
+
+footer#footer
+{
+    font-size: 24px;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.clearer
+{
+    width: 100%;
+    clear: both;
+}
+
+
+
+/*Calculator - Ex2*/
+
+
+section#calculator
+{
+	width: 500px;
+	min-height: 400px;
+	margin: 0 auto;
+    padding-top: 0;
+	border-radius: 10px;
+    background-color: #afa88c;
+    display: none;
+}
+
+section#calculator section#displayWrap
+{
+    width: 498px;
+    height: 90px;
+    margin-top: 0;
+    background-color: #494949;
+    border: 1px solid #494949;
+}
+
+section#calculator div#calcDisplay
+{
+	width: 260px;
+	height: 30px;
+	margin: 20px auto;
+	padding: 10px 20px;
+	background-color: #fff;
+	color: #000;
+	font-size: 18pt;
+}
+
+section#calculator section#buttons
+{
+	margin: 30px auto 0 auto;
+    width: 437px;
+}
+
+
+section#calculator section#buttons button
+{
+    font-weight: bold;
+}
+
+section#calculator section#settingsChange
+{
+	display: none;
+    padding-top: 15px;
+}
+
+section#calculator section#settingsChange label
+{
+    margin-left: 50px;
+}
+
+section#calculator section#settingsChange input
+{
+    padding: 2px 5px;
+}
+
+
+section#calculator section#inputBox
+{
+    width: 200px;
+    margin: 30px auto 0 auto;
+}
+
+section#calculator section#inputBox input#inputCalc
+{
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 14pt;
+    border: 2px solid #494949;
+}
+
+
+

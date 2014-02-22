@@ -1,0 +1,116 @@
+<html xmlns="http://www.w3.org/1999/html">
+
+    <head>
+        <title>Profile</title>
+
+        <link rel="stylesheet" href="style.css" />
+        
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+        <script src="Calculator.js"></script>
+        <script src="main.js"></script>
+
+
+    </head>
+
+    <body>
+        <article id="mainContainer" class="shadowedBordered">
+
+            <header id="upperForm" class="padded">
+                <form id="signinForm">
+                    <div id="formFields">
+                        <label for="username">Username:</label>
+                        <input name="username" id="username" type="text" value="Some name" />
+
+                        <label for="password">Password:</label>
+                        <input name="password" id="password" type="password" value="Some password" />
+                    </div>
+
+                    <button type="button" id="submitButton" class="shadowedBordered niceButton">Send</button>
+                </form>
+                <div class="clearer"></div>
+            </header>
+
+            <hr id="upperSplitter" />
+
+            <section id="mainContent">
+
+                <section id="headerContainer">
+                    <h1>
+                        Ido, <b>Berkovich</b><br />
+                        <b>026492082</b>
+                    </h1>
+					
+					<p>
+						Welcome to my personal website...
+					</p>
+					
+					<p>
+                        I was raised in Mazkeret batia, this is my fourth year in Jerusalem. <br />
+                        My B.Sc major is in computer science, minor in Hebrew language studies. <br />
+                        I married my wife two months ago in a very special marriage.
+                    </p>
+					<p>
+						This is the last year of my B.Sc. <br />
+						I work at Intel for over a year now, at a student position.
+					</p>
+                </section>
+
+                <section id="myPic">
+                    <img src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-ash3/541480_621683417869832_1777329637_n.jpg" alt="My picture" width="300px" />
+                </section>
+				
+				<div class="clearer"></div>
+            </section>
+			
+			<section id="tableSection" class="padded">
+				<table id="websitesTable">
+                    <tr>
+                        <td><a href="http://www.katamon.co.il/" title="Hapoel Katamon">Hapoel Katamon Jerusalem - Fans club</a></td>
+                        <td>My second true love (after my wife, of course)</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.facebook.com/pages/%D7%9E%D7%A2%D7%99%D7%99%D7%A0%D7%95%D7%AA-%D7%91%D7%90%D7%A8%D7%A5/233757178240" title="Springs in Israel">Springs in Israel</a></td>
+                        <td>I love hiking and nothing like finishing a hike in a nice spring</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://www.politiwatch.co.il/" title="Politiwatch">Politiwatch</a></td>
+                        <td>This website is my friend's initiative and I think it's a really good site</td>
+                    </tr>
+                </table>
+			</section>
+
+            <hr id="bottomSplitter" />
+
+            <footer id="footer" class="padded">
+                Everybody believes in something. <br />
+                I believe i'll have another beer.
+            </footer>
+            
+            <section id="calculator" class="shadowedBordered">
+            	<section id="displayWrap">
+                    <div id="calcDisplay"></div>
+            	</section>
+            	
+            	<section id="buttons">
+            		<button type="button" id="plusBut" class="niceButton shadowedBordered">+</button>
+            		<button type="button" id="multBut" class="niceButton shadowedBordered">*</button>
+            		<button type="button" id="settingsBut" class="niceButton shadowedBordered">Settings</button>
+            		<button type="button" id="clearBut" class="niceButton shadowedBordered">Clear</button>
+            	</section>
+            	
+            	<section id="settingsChange">
+            	    <label for="defaultVal">New default value:</label>
+                    <input name="defaultVal" id="defaultVal" type="text" />
+                    <button type="button" id="settingsSubmit" class="niceButton">Set</button>
+            	</section>
+            	
+            	<section id="inputBox">
+            		<input type="text" id="inputCalc" />
+            	</section>
+            </section>
+        </article>
+    </body>
+
+</html>
